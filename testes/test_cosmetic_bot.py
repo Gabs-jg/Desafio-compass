@@ -175,14 +175,6 @@ def test_cosmetic_bot(caso_data):
 
     if categoria == "Fora do escopo":
 
-        # Para perguntas fora do escopo, uma resposta correta
-        # normalmente é uma recusa.
-        #
-        # Answer Relevancy pode considerar essa recusa irrelevante
-        # porque ela não responde à pergunta original.
-        #
-        # Portanto, não usamos relevância como critério de aprovação.
-
         metricas = [
             ("Faithfulness", metrica_fidelidade),
             ("Conformidade de Claims", metrica_claims),
